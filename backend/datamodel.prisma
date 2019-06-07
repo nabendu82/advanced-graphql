@@ -6,25 +6,22 @@ enum Permission {
   ITEMDELETE
   PERMISSIONUPDATE
 }
-
 type User {
  id: ID! @id
  name: String!
- email: String! @Unique
+ email: String! @unique
  password: String!
  resetToken: String
  resetTokenExpiry: Float
  permissions: [Permission!]! @scalarList(strategy: RELATION)
 }
-
 type Item {
-  id: ID! @id @Unique
+  id: ID! @id
   title: String!
   description: String!
   image: String
   largeImage: String
   price: Int!
   createdAt: DateTime!
-  # updatedAt: DateTime!
-  # user: User!
+  user: User!
 }
