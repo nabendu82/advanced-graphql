@@ -1,5 +1,5 @@
 # source: https://eu1.prisma.sh/nabendu-1d8490/sick-demo/dev
-# timestamp: Fri Jun 07 2019 21:19:06 GMT+0530 (India Standard Time)
+# timestamp: Fri Jun 07 2019 21:34:29 GMT+0530 (India Standard Time)
 
 type AggregateItem {
   count: Int!
@@ -44,7 +44,6 @@ input ItemCreateInput {
   image: String
   largeImage: String
   price: Int!
-  createdAt: DateTime!
   user: UserCreateOneInput!
 }
 
@@ -129,7 +128,6 @@ input ItemUpdateInput {
   image: String
   largeImage: String
   price: Int
-  createdAt: DateTime
   user: UserUpdateOneRequiredInput
 }
 
@@ -139,7 +137,6 @@ input ItemUpdateManyMutationInput {
   image: String
   largeImage: String
   price: Int
-  createdAt: DateTime
 }
 
 input ItemWhereInput {
