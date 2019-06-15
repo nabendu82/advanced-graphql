@@ -55,7 +55,6 @@ const Cart = () => (
                 <SickButton>Checkout</SickButton>
               </TakeMyMoney>
             )}
-
           </footer>
         </CartStyles>
       );
